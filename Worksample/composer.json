@@ -1,0 +1,22 @@
+{
+    "name": "madepeople/worksample",
+    "description": "Magento 2 module which when an order is fully paid stores the order ID and the paid total sum multiplied by a decimal factor in a database table.",
+    "keywords": [
+        "magento2"
+    ],
+    "license": "Apache-2.0",
+    "type": "magento2-module",
+    "version": "1.0.2",
+    "require": {
+        "php": "~5.6.0|7.0.2|7.0.4|~7.0.6",
+        "magento/framework": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MadePeople\\Worksample\\": ""
+        }
+    }
+}

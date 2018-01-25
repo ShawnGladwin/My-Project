@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="MadePeople_Worksample::payment_head"
+             title="Worksample"
+             module="MadePeople_Worksample"
+             sortOrder="100"
+             resource="MadePeople_Worksample::payment_head"/>
+
+        <add id="MadePeople_Worksample::factor"
+             title="Factor"
+             module="MadePeople_Worksample"
+             sortOrder="10"
+             parent="MadePeople_Worksample::payment_head"
+             action="worksample/factor"
+             resource="MadePeople_Worksample::payment"/>
+
+        <add id="MadePeople_Worksample::payment"
+             title="Payment"
+             module="MadePeople_Worksample"
+             sortOrder="20"
+             parent="MadePeople_Worksample::payment_head"
+             action="worksample/payment"
+             resource="MadePeople_Worksample::payment"/>
+
+    </menu>
+</config>
